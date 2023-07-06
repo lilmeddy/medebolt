@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <style>
+        main{
+            
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: brown;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+        }
+        .logo img{
+            height: 40px;
+            margin: 50px;
+        }
+        .btn{
+            margin:50px ;
+            color: white;
+            
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        main{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: brown;
+        }
+        main div h2,h1{
+            color: white;
+
+        }
+        .inp{
+            background-color: wheat;
+            width: 350px;
+            margin-bottom: 50px;
+        }
+        .inp h4, h4{
+            color:rgb(30 30 30);
+            
+        }
+        .mar{
+            margin: 10px;
+            padding-bottom: 15px;
+            
+        }
+        .mar button, input{
+            padding: 5px;
+        }
+        .black{
+            color: black;
+        }
+        .green{
+            color: green;
+            cursor: pointer;
+        }
+        .green:hover{
+            text-decoration: underline solid green;
+        }
+        button p{
+            display: none;
+            
+        }
+        button:focus p{
+            display: block;
+        }
+        .mail{
+            height: 30px;
+             width: 300px;
+            border-radius: 10px ;
+           opacity: 0.7;
+           margin: 3px;
+           margin-bottom: 8px;
+        }
+        .hide{
+           background-color: #fff;
+           border-radius: 5px;
+           width: fit-content;
+        }
+        .hide input{
+            border: none;
+            height: 40px;
+             width: 250px; 
+            border-radius: 0px 5px  5px 0px;
+        }
+        .hide button{
+            width: auto;
+            height: 50px;
+            border: none;
+            padding: 0px 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .but button{
+            height: 40px;
+             width: 300px;
+            border-radius: 5px ;
+           margin: 3px;
+           text-align: start;
+           font-size: 20px;
+           margin-bottom: 8px;
+           outline: none;
+        }
+        
+        .ic button{
+            height: 40px;
+             width: 300px;
+            border-radius: 5px ;
+           margin: 10px;
+           background-color: green;
+           font-size: 20px;
+           margin-bottom: 8px;
+           outline: none;
+        }
+        .eng{
+            margin-left:150px ;
+            
+        }
+        .left{
+            text-align: end;
+            color: white;
+            margin-top: 10px;
+        }
+        .what{
+            background-color: green;
+            columns: white;
+            border-radius: 5px;
+            width: 150px;
+        }
+        h4{
+            text-align: center;
+           
+        }
+        section{
+            background-color: white;
+            width:100%;
+        }
+        .flex1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 95%;
+        }
+         .im{
+            width: 80%;
+            height: 80%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+         }
+         .im i{
+            
+            border-radius: 40%;
+            /* background-color: #2eb875; */
+            font-size: 40px;
+            
+         }
+        .img{
+            width: 90%;
+            height: 90%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .img img{
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+        }
+        hr{
+            text-align: center; 
+            width: 50%;
+        }
+        .table{
+            border: 1px solid grey;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .table dd, dt{
+            margin: 20px 30px ;
+        }
+        .table dt{
+            color: black;
+            font-size: 18px;
+        }
+        .table dd{
+            font-size: 16px;
+        }
+        .table h5{
+            margin: 40px 30px ;
+            color: green;
+        }
+        h5:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="logo"><img src="bolt white.svg" alt=""></nav>
+       <nav class="btn"><a href="">LogIn</a></nav>
+    </header>
+  <main>
+    <div>
+        <h1>Drive with Bolt</h1>
+        <h2>Earn good money with your vehicle.</h2>
+        <button class="what"><img src="whatsapp.svg" alt=""> Sign up on &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; whatsapp</button>
+    </div>
+    <div>
+        
+    </div>
+    <div class="inp">
+        <div class="mar">
+          <h1>Sign Up as a driver below</h1>
+  
+          <h4>If you have multiple vehicles and drivers, <span class="green">  signup as a fleet owner here.</span></h4>
+          <label for="email">Email</label><br>
+          <input type="email" class="mail" placeholder="john.doe@gmail.com"><br>
+          <p>This will be your username</p><br>
+          <label for="no">Phone</label><br>
+          <div class="hide">
+            <button>+234 </button>
+        <input type="text" placeholder=99999932111>
+    </div>
+    <label for="">City</label> 
+    <div class="but"><button>Lagos</button></div>
+   By signing up, you accept our <span class="green"> Terms of Service </span>and <span class="green">Privacy Policy</span> 
+   <div class="ic"><button>NEXT <i class="fa-sharp fa-solid fa-arrow-right"></i></button></div>
+     
+   </div>
+    </div>
+</main>
+    <section>
+        
+            <h4>Why Bolt?</h4>
+       <div class="flex1">
+            <div class="im">
+             <i class="icofont-chart-histogram"></i>
+                <h3>Earn money</h3>
+                <p>Drive with Bolt and earn extra income.</p> 
+            </div>
+            <div class="im">
+                <i class="icofont-history"></i>
+                <h3>Drive anytime</h3>
+                <p>Work with your own schedule. No minimum hours and no boss. </p>
+            </div>
+            <div class="im">
+                <i class="icofont-ban"></i>
+                <h3>No monthly fees</h3>
+                <p>No risk, you only pay when you earn.</p>
+            </div>
+           
+        </div>
+    </section>
+    <hr>
+    <section>
+        
+        <h4>How Bolt works?</h4>
+   <div class="flex1">
+        <div class="img">
+            <h3>1. Accept the request</h3> 
+            <img src="pick.jpg" alt="">
+           
+        </div>
+        <div class="img">
+            <h3>2. Pickup the client</h3>
+            <img src="location.jpg" alt="">
+            
+        </div>
+        <div class="img">
+            <h3>3. Drive to destination</h3>
+            <img src="destina.jpg" alt="">
+           
+        </div>
+    </div>
+</section>
+    <div class="table">
+        <h4>Frequently Asked Questions</h4>
+         <dl>
+            <dt>Q: I don't drive full-time. Can I use Bolt for just a few hours a week?</dt>
+            <dd>A: Of course, some of our drivers are only active a few hours during weekends and make solid part-time income.</dd>
+            <dt>Q: How do I get paid?</dt>
+            <dd>A: Clients pay you in cash or via Bolt. We pay out to your bank account every week.</dd>
+            <dt>Q: How much do I pay Bolt?</dt>
+            <dd>A: We do not have any monthly fees, so you only pay for finished trips. We usually ask for 10% to 20% of the ride fee, depending on your city. You can get more information by contacting us.</dd>
+            <dt>Q: How long does it take to sign up?</dt>
+            <dd>A: Submitting your information takes just 5 minutes. Following that, depending on the local office, you may receive a 30 minute in-person training. In some cities, we will accept your application remotely once you provide us with all the necessary documents.</dd>
+            <dt>Q: What if I don't have a smartphone?</dt>
+            <dd>A: Our city teams suggest you a budget Android smartphone that you can buy or finance.</dd>
+            <dt>Q: What if I don't have a vehicle?</dt>
+            <dd>A: Our city teams can help you match with our partner fleets or rental companies who offer competitive rates on vehicles that are accepted on our platform. In some cities, longer term drivers can get financing deals from our partners.</dd>
+
+         </dl>
+         <h5>Check our Knowledgebase for more info.</h5>
+    </div>
+      <!-- <div class="tax">
+        <h4><button><a href="driver.html">Sign Up to drive with bolt</a></button></h4>
+        <h6>Got questions or concerns?<span> Contact us.</span></h6>
+        <h6>Taxify OÜ. Vana-Lõuna tn 39/1, Tallinn, 10134, Estonia</h6>
+      </div> -->
+</body>
+</html>

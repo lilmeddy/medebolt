@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <style>
+        *{
+            padding: 0; 
+            margin: 0;  
+         box-sizing: border-box;
+       }
+       body{
+        box-sizing: border-box;
+        border: 1px solid black;
+       }
+        header{
+            display: grid; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             grid-template-columns: auto 1fr auto; 
+             padding: 5px 20px;
+             width: 100%;
+             top: 0;
+             height: 50px;
+             background-color: rgb(240,240,240);
+        }
+        .middle{
+          display: flex;
+          align-items: center;
+         
+        }
+        .middle span{
+          padding-left: 10px;
+        }
+      .glo{
+        border: none;
+        text-decoration: none;
+      }
+      .end{
+        text-align: right;
+        text-decoration: none;
+        padding: auto;
+       
+      }
+      .end a{
+        text-decoration: none;
+        color: greenyellow;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      li{
+        display: inline-block;
+        margin-right: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 10px 20px;
+        font-weight: 300;
+      }
+      ul:hover{
+        background-color: rgba(0 0 0 0.2) ;
+        cursor: pointer;
+      }
+      .fast{
+        display: flex;
+        height:100%;
+        width: 100%;
+      }
+      .fast h1{
+       font-size: 75px;
+       margin-top: 200px;
+       margin-bottom: 40px;
+       
+       
+      }
+      .fast img{
+       width: fit-content;
+       height: fit-content;
+      }
+      
+      
+      .afford{
+        width: 50%;
+        background-color: #2eb875;
+        color: white;
+        padding: 50px;
+      }
+      .ano{
+        background-color: blue;
+        /* border: 8px solid red; */
+        margin-top: -20px;
+        height: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        padding: 25px 15px;
+      }
+      .cen h2{
+          color: #fff;
+          margin-bottom: 20px;
+      }
+      .cen p{
+        color: #fff;
+      }
+      .bt button{
+        border-radius: 40px;
+        width: 200px;
+        height: 50px;
+      }
+      .bt a{
+        text-decoration: none;
+        color: gray;
+      }
+      .car{
+        display: flex;
+            justify-content: space-around;
+            align-items: space-evenly;
+            width: 100%;
+            height: 100%;
+      }
+      .img{
+            width: 20%;
+            height: 90%;
+            text-align: start;
+            margin-top: 20px;
+            margin-bottom: 30px;
+           
+        }
+        .img img{
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+        .img h3{
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+        .img p{
+          margin-bottom: 120px;
+          font-size: 20px;
+        }
+        .phone{
+          background-color: rgb(217, 253, 229) ;
+          
+          height: 5%;
+        
+          display: flex;
+          justify-content: space-around;
+          
+          
+        }
+
+        .phimg{
+               margin-top: -100px; 
+             margin-bottom: -50px;
+        }
+        .phimg img{
+          margin-top: -150px;
+          width: 800px;
+
+        }
+       .ph h1{
+        /* text-align: center; */
+        margin-top: 200px;
+        margin-left: 100px; 
+       }
+       .ph p{
+        /* text-align: center; */
+         margin-left: 100px; 
+        margin-top: 15px;
+       }
+        .icon{
+            display: flex;
+            justify-content: space-around;
+            align-items: space-evenly;
+            width: 100%;
+            height: 100%;
+        }
+        .img h4{
+          margin-bottom: 5px;
+        }
+        .ride{
+          background-color: #2eb875;
+          height: 100%;
+          text-align: center;
+          color: #fff;
+          
+        }
+        .ride h2 {
+          padding: 80px 0px 15px 0px;
+          font-size: 30px;
+
+        }
+        .ride p{
+          padding: 10px 0px 80px 0px;
+          font-size: 16px;
+        }
+        .a{
+          text-decoration: underline;
+          color: #fff;
+        }
+        .flex2{
+          width: 100%;
+          height: 400px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .bolt{
+          width: 20%;
+          height: 300px;
+          font-size: 25px;
+        }
+        .bolt h4{
+          display: flex;
+          align-items: center;
+          padding-top:15px;
+
+        }
+        .bolt h5{
+          padding-top:15px;
+
+        }
+        .bolt h5 a{
+              text-decoration: none;
+              color: gray;
+
+        }
+        h5:hover  a{
+          color: #2eb875;
+        }
+        footer{
+          display: flex;
+          justify-content: space-between;
+          margin: 50px;
+          margin-bottom: 20px;
+        }
+        .fb i{
+          margin-right: 10px;
+          padding: 8px;
+          width: 100px;
+          border-radius: 25px;
+          background-color:rgb(244, 244, 246) ;
+          /* height: 200px; */
+          font-size: 30px;
+        }
+        .left button{
+            border-radius: 40px;
+            width: 160px;
+            height: 45px;
+            padding: 10px;
+            margin-left: 10px;
+            border: none;
+            background-color:rgb(244, 244, 246);
+        }
+        hr{
+          margin-right: 50px;
+          margin-left: 50px;
+        }
+        .hr{
+          display: flex;
+          justify-content: space-between;
+          margin-right: 50px;
+          margin-left: 50px;
+          margin-bottom: 50px;
+          margin-top: 20px;
+        }
+        .hr a{
+          text-decoration: none;
+          color: grey;
+          margin-right: 10px;
+        }
+        a:hover {
+          color: green;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+          <nav class="middle">
+            <img src="gobal.svg" alt="">
+            <span> Global</span>
+          </nav>
+          <nav class="end">
+            <span>Partner with Bolt as a:</span>
+            <a href="driver.html" target="_blank">Driver</a>
+            <a href="fleet.html " target="_blank">Fleet partner</a>
+            <a href="others.html">Courier</a>
+            <a href="others.html">Resturant or shop</a>
+          </nav>
+    </header>
+    <nav class="second">
+      <ul>
+        <li><span><img src="logo.svg" alt="" height="19px"></span>
+        </li>
+        <li>
+          <span>Product</span>
+          <i class="icofont-caret-down"></i>
+        </li>
+        <li>
+          <span>Partner with Bolt</span>
+          <i class="icofont-caret-down"></i>
+        </li>
+        <li>
+          <span>Company</span>
+          <i class="icofont-caret-down"></i>
+        </li>
+        <li>
+          <span>Support</span>
+          <i class="icofont-caret-down"></i>
+        </li>
+        <li>
+          <span>Cities</span>
+          <i class="icofont-caret-down"></i>
+        </li>
+      </ul>
+    </nav>
+    <section class="fast">
+      <div class="afford">
+        <h1>The fast, affordable way to ride.</h1>
+        <p>Download the Bolt app</p>
+        <img src="en.svg" alt="">
+        <!-- <img src="en (1).svg" alt="" width="60px"> -->
+      </div>
+      <div>
+        <img src="girl image.webp" alt="">
+      </div>
+    </section>
+    
+    <div class="ano">
+       <div class="cen">
+        <h2>Earn extra money driving</h2>
+        <p>Set your own schedule, be your own boss.</p>
+       </div>
+       <div class="bt">
+        <button> <a href="fleet.html" target="_blank"> SIGN UP TO DRIVE</a> </button>
+       </div>
+    </div>
+    <div class="car">
+      
+        <div class="img">
+        
+            <img src="car.svg" alt="" height="200px" width="260px">
+            <h3>Get a ride</h3> 
+            <p>Bolt offers you a ride in minutes.</p>
+          
+        </div>
+        <div class="img">
+            
+            <img src="prices.svg" alt="" height="200px">
+           <h3>The best prices</h3>
+            <p>We aim to offer the best ride prices in every city. See for yourself!</p>
+          
+        </div>
+        <div class="img">
+            
+            <img src="phone.svg" alt="" height="200px">
+          <h3> Drive to destination</h3>
+           <p>Get wherever you need to go as quickly as possible.</p>
+          
+        </div>
+    </div>
+    <div class="phone">
+       <div class="ph">
+          <h1>Get a ride in minutes!</h1>
+          <p>Pick your destination, request a ride, meet your driver, enjoy the journey.</p>
+       </div>
+       <div class="phimg">
+            <img src="index-phone (1).webp" alt="">
+       </div>
+    </div>
+    <div class="icon">
+      <div class="img">
+        <img src="icon1.svg" alt="" height="20px">
+          <h4> Safe and convenient</h4>
+           <p>Moving with Bolt is easy, convenient and fast.</p>
+      </div>
+      <div class="img">
+         <img src="icon2.svg" alt="" height="20px">
+         <h4> Happy drivers, happy riders</h4>
+         <p>Bolt drivers earn more thanks to lower commission rates.</p>
+     </div>
+     <div class="img">
+       <img src="icon3.svg" alt="" height="20px">
+      <h4> Always there for you</h4>
+     <p>Get fast support, whenever you need it.</p>
+    </div>
+    </div>
+    <div class="ride">
+     <h2>Ready to ride?</h2>
+     <p>Or <span><a href="" class="a">sign up</a></span> to start driving.</p>
+    </div>
+    <div class="flex2">
+      <div class="bolt">
+        <img src="logo.svg" alt="" width="80px" height="65px">
+        <h4> <img src="gobal.svg" alt="">
+          <span> Global</span></h4>
+      </div>
+      <div class="bolt">
+        <h3>Bolt</h3>
+        <h5><a href="">Rides</a></h5>
+        <h5><a href="">Food delivery</a></h5>
+        <h5><a href="">Grocery delivery</a></h5>
+        <h5><a href="">Scooters</a></h5>
+        <h5><a href="">Car-sharing</a></h5>
+        <h5><a href="">Business</a></h5> 
+        <h5><a href="">Airports</a></h5>
+        <h5><a href="">Cities</a></h5>
+      </div>
+      <div class="bolt">
+        <h3>Partner with Bolt</h3>
+        <h5><a href="">Sign up as a driver</a></h5>
+        <h5><a href="">Sign up as a courier</a></h5>
+        <h5><a href="">Fleets</a></h5>
+        <h5><a href="">Franchise</a></h5>
+        <h5><a href="">Influencers</a></h5>
+      </div>
+      <div class="bolt">
+        <h3>Company</h3>
+        <h5><a href="">About us</a></h5>
+        <h5><a href="">Careers</a></h5>
+        <h5><a href="">Green Plan</a></h5>
+        <h5><a href="">Press</a></h5>
+        <h5><a href="">Blog</a></h5>
+        <h5><a href="">Brand guidelines</a></h5>
+      </div>
+    </div>
+    <footer>
+      <nav class="fb">
+            <i class="icofont-facebook"></i>
+            <i class="icofont-whatsapp"></i>
+            <i class="icofont-instagram"></i>
+            <i class="icofont-twitter"></i>
+      </nav>
+      <nav class="left">
+        <button>Get the Bolt app</button>
+        <button>Get the Bolt Food app</button>
+        <button>Request a ride online</button>
+      </nav>
+    </footer>
+    <hr>
+    <nav class="hr">
+      <div>© 2022 Bolt Technology OÜ</div>
+      <div>
+        <a href="others.html">Legal</a>
+        <a href="others.html">Cookies</a>
+        <a href="others.html">Security</a>
+      </div>
+    </nav>
+</body>
+</html>

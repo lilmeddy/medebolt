@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <style>
+        .bg{
+            background-image:url(girlphone.jpg) ;
+            background-size: cover;
+            background-color: lightgrey;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-position: center;
+            height: 350px;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px;
+        }
+        .logo img{
+            height: 40px;
+            /* margin: 50px; */
+        }
+        h4{
+            color: #fff;
+
+        }
+        h4 span{
+            margin-left: 30px;
+        }
+        .how{
+            text-align: center;
+            color: #fff;
+            
+        }
+        .inp{
+            border: 7px solid gray;
+            width: fit-content;
+            margin: auto;
+            padding: 0 20px;
+            border-radius: 25px;
+            background-color: #fff;
+        }
+        .inp input{
+            width: 600px;
+            height: 40px;
+            border: none;
+            outline: none;
+        }
+        .inp:hover{
+            border-color: green;
+        }
+        .sign{
+            background-color: green;
+            height: 70px;
+            text-align: center;
+        }
+        .sign button{
+            margin-top: 15px;
+            
+            background-color: green;
+            border: 1px solid white;
+            color: #fff;
+            cursor: pointer;
+            /* height: 20px; */
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 1000px; 
+            /* border: 4px solid black; */
+            height: 600px;
+        }
+        .but{
+            /* border: 4px solid red ; */
+            width: 302px;
+            /* padding: 5px; */
+            height: 150px;
+            border-radius: 15px;
+            border: 1px solid green;
+           
+        }
+        .over{
+            width: 300px;
+            /* padding: 5px; */
+            height: 150px;
+            border-radius: 15px;
+            border: 1px solid ;
+            background-color: green;
+            color: #fff;
+        }
+        .over:hover{
+            background-color: #fff;
+            color: green;
+        } 
+        footer{
+            display: flex;
+            justify-content: space-evenly;
+            height: 400px;
+            align-items: center;
+            background-color: rgb( 38 47 54);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+     <div class="bg">
+        <header>
+            <nav class="logo">
+              <img src="bolt white.svg" alt="">
+            </nav>
+            <nav class="right">
+                <h4><span>BOLT HELP</span> 
+                <span> ENGLISH (US)</span></h4>
+            </nav>
+        </header>
+        <div class="how">
+           <h2>How can we help?</h2>
+        </div> 
+           <div class="inp">
+            <i class="icofont-search-1"></i>
+          <input type="text" placeholder="Search Google">
+          </div>
+       
+     </div>
+     <div class="sign">
+        <button><a href="fleet.html"></a> Sign up</button>
+     </div>
+     <center>
+        <section>
+     <div class="flex">
+        <div class="but">
+         <div class="over">
+           <h3>For Rides</h3>
+           <h6>Detailed guide and information on the rider app, account & rides</h6>
+         </div>
+        </div>
+        <div class="but">
+            <div class="over">
+                <h3>Bolt Food</h3>
+                <h6>information about the food app, placing an order and delivery</h6>
+            </div>
+        </div>
+        <div class="but">
+            <div class="over">
+                <h3>For Drivers</h3>
+                <h6>Information about the driver app, payouts,ride-related issues,etc</h6>
+            </div>
+        </div>
+        <div class="but">
+            <div class="over">
+                <h3>For Coriers</h3>
+                <h6>Information about courier app,payouts,picking-up and delivering the order</h6>
+            </div>
+        </div>
+        <div class="but">
+            <div class="over">
+                <h3>For Fleet Owners</h3>
+                <h6>Information on working with Fleet Portal and on connecting your fleet and drivers</h6>
+            </div>
+        </div>
+        <div class="but">
+            <div class="over">
+                <h3>For Resturants</h3>
+                <h6>Information about the app, managing orders and payments</h6>
+            </div>
+        </div>
+     </div>
+     </center>
+    </section>
+    <footer>
+        <div>
+            <h1>Company</h1>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <h1>Ride Or Drive</h1>
+            <p>Drivers</p>
+            <p>Cities</p>
+            <p>Legal</p>
+        </div>
+        <div>
+            <h1>More</h1>
+            <p>Fleets</p>
+            <p>Business</p>
+            <p>Dispatch Software</p>
+        </div>
+        <div>
+            <h1>Bolt</h1>
+            <p>Drive</p>
+            <p>Food</p>
+            <p>ETC</p>
+        </div>
+    </footer>
+</body>
+</html>

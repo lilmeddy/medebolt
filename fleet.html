@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <style>
+        body{
+            background-color: brown;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo img{
+            height: 40px;
+            margin: 50px;
+        }
+        .btn{
+            margin:50px ;
+            color: white;
+            
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        main{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        main div h2,h1{
+            color: white;
+
+        }
+        .inp{
+            background-color: wheat;
+            width: 350px;
+            margin-bottom: 50px;
+        }
+        .inp h4, h4{
+            color:rgb(30 30 30);
+            
+        }
+        .mar{
+            margin: 10px;
+            padding-bottom: 15px;
+            
+        }
+        .mar button, input{
+            padding: 5px;
+        }
+        .black{
+            color: black;
+        }
+        .green{
+            color: green;
+            cursor: pointer;
+        }
+        .green:hover{
+            text-decoration: underline solid green;
+        }
+        button p{
+            display: none;
+        }
+        button:focus p{
+            display: block;
+        }
+        .mail{
+            height: 30px;
+             width: 300px;
+            border-radius: 10px ;
+           opacity: 0.7;
+           margin: 3px;
+           margin-bottom: 8px;
+        }
+        .hide{
+            /* height: 30px; */
+             width:300px; 
+             margin: 3px;
+             display: inline;
+             display: flex;
+             border-radius: 10px ;
+             border: 10px;
+             /* border: 3px solid grey; */
+             margin-bottom: 8px;
+
+        }
+        .hide input{
+            border: none;
+            height: 40px;
+             width: 250px; 
+            border-radius: 0px 5px  5px 0px;
+        }
+        .hide button{
+            width: auto;
+            height: 50px;
+            border: none;
+            padding: 0px 8px;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .but button{
+            height: 40px;
+             width: 300px;
+            border-radius: 5px ;
+           margin: 3px;
+           text-align: start;
+           font-size: 20px;
+           margin-bottom: 8px;
+           outline: none;
+        }
+        
+        .ic button{
+            height: 40px;
+             width: 300px;
+            border-radius: 5px ;
+           margin: 10px;
+           background-color: green;
+           font-size: 20px;
+           margin-bottom: 8px;
+           outline: none;
+        }
+        .eng{
+            margin-left:150px ;
+            
+        }
+        .left{
+            text-align: end;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="logo"><img src="bolt white.svg" alt=""></nav>
+       <nav class="btn"><a href="">LogIn</a></nav>
+    </header>
+  <main>
+    <div>
+        <h1>Add your Fleet to Bolt</h1>
+        <h2>Manage drivers, vehicles and documents.</h2>
+    </div>
+    <div>
+        
+    </div>
+    <div class="inp">
+        <div class="mar">
+          <h1>Fleet Owners:</h1>
+          <h4>Sign up here if you have <span class="black">multiple vehicles</span> to add on the Bolt platform.</h4>
+          <h4>If you are an individual driver, <span class="green"> signup as a driver here.</span></h4>
+          <label for="email">Email</label><br>
+          <input type="email" class="mail" placeholder="john.doe@gmail.com"><br>
+          <label for="no">Phone</label><br>
+          <div class="hide">
+            <button>+234
+                 
+        </button>
+        <input type="text" placeholder="99993999999">
+    </div>
+    <label for="">Vehicles in your fleet</label> 
+    <div class="but"><button>1-10</button></div>
+    <input type="checkbox">By signing up, you accept our <span class="green"> Terms of Service </span>and <span class="green">Privacy Policy</span> 
+   <div class="ic"><button>NEXT <i class="fa-sharp fa-solid fa-arrow-right"></i></button></div>
+      <hr>
+      <button class="eng">English</button>
+   </div>
+    </div>
+    
+  </main>
+  <div class="left">3.31.0+94ddf8e7</div>
+</body>
+</html>
